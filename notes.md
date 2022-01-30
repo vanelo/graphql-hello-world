@@ -1,4 +1,6 @@
-# Calls examples
+# Beginner GraphQl Series
+From Ben's tutorial: https://youtu.be/DyvsMKsEsyE
+## Query examples
 ```
 mutation {
   register {
@@ -25,6 +27,24 @@ mutation {
         user {
             id
         }
+    }
+}
+```
+```
+{
+    user {
+        id
+        username
+        firstLetterOfUsername
+    }
+}
+```
+```
+subscription {
+    newUser {
+        id
+        username
+        firstLetterOfUsername
     }
 }
 ```
